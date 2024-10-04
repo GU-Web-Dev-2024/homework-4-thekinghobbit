@@ -12,7 +12,7 @@
 <body>
     <div class="candyBag">
         <h1 class="candyHead">dis is da candiy i got</h1>
-        <div class="candies">
+        <div class="candies" id="candyContainer">
             <div class="candy">
                 <div class="candyContent">
                     <p>pumkin cand</p>
@@ -81,6 +81,16 @@
 
     </footer>
     <script>
+        function shuffleElements(container) {
+            var elements = container.children;
+            for (var i = elements.length; i >= 0; i--) {
+            container.appendChild(elements[Math.random() * i | 0]);
+            }
+        }
+        window.addEventListener('load', function() {
+            var container = document.getElementById('candyContainer'); // Replace 'your-container-id' with the ID of the container div that holds the RSS feed divs
+            shuffleElements(container);
+        });
         document.addEventListener('DOMContentLoaded', () => {
           const candies = document.querySelectorAll('.candy');
     
