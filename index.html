@@ -86,7 +86,7 @@
     
           candies.forEach(candy => {
             const randomRotation = Math.random() * 360; // Random rotation between 0 and 360 degrees
-            const randomInterval = Math.random() * 3 + 1; // Random interval between 1 and 6 seconds
+            const randomInterval = Math.random() * 3 + .001; // Random interval between 1 and 6 seconds
     
             candy.style.animation = `rotate ${randomInterval}s infinite linear`;
             // candy.style.setProperty('--animation-rotation', `${randomRotation}deg`);
