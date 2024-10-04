@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lacquer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>My candy</title>
+</head>
+<body>
+    <div class="candyBag">
+        <h1 class="candyHead">dis is da candiy i got</h1>
+        <div class="candies">
+            <div class="candy">
+                <div class="candyContent">
+                    <p>pumkin cand</p>
+                    <img src="./images/5u7vbahlcmu11.webp" alt="">
+                </div>
+            </div>
+            <div class="candy">
+                <div class="candyContent">
+                    <p>smile pop</p>
+                    <img src="./images/smile.png" alt="">
+                </div>
+            </div>
+            <div class="candy">
+                <div class="candyContent">
+                    <p>shrimpp</p>
+                    <img src="images/shrimp.png" alt="">
+                </div>
+            </div>
+            <div class="candy">
+                <div class="candyContent">
+                    <p>chaoclat</p>
+                    <img src="./images/worms.png" alt="">
+                </div>
+            </div>
+            <div class="candy">
+                <div class="candyContent">
+                    <p>samndwitch</p>
+                    <img src="./images/sammy.png" alt="">
+                </div>
+            </div>
+            <div class="candy">
+                <div class="candyContent">
+                    <p>pumkin cand</p>
+                    <img src="./images/5u7vbahlcmu11.webp" alt="">
+                </div>
+            </div>
+            <div class="candy">
+                <div class="candyContent">
+                    <p>smile pop</p>
+                    <img src="./images/smile.png" alt="">
+                </div>
+            </div>
+            <div class="candy">
+                <div class="candyContent">
+                    <p>shrimpp</p>
+                    <img src="images/shrimp.png" alt="">
+                </div>
+            </div>
+            <div class="candy">
+                <div class="candyContent">
+                    <p>chaoclat</p>
+                    <img src="./images/worms.png" alt="">
+                </div>
+            </div>
+            <div class="candy">
+                <div class="candyContent">
+                    <p>samndwitch</p>
+                    <img src="./images/sammy.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <p>made by da pumpkin man</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const candies = document.querySelectorAll('.candy');
+    
+          candies.forEach(candy => {
+            const randomRotation = Math.random() * 360; // Random rotation between 0 and 360 degrees
+            const randomInterval = Math.random() * 3 + 1; // Random interval between 1 and 6 seconds
+    
+            candy.style.animation = `rotate ${randomInterval}s infinite linear`;
+            // candy.style.setProperty('--animation-rotation', `${randomRotation}deg`);
+          });
+        });
+        $(".candy").hover(candy.style.animation ='none') //Stop the animation when mouse in
+        
+        
+      </script>
+</body>
+</html>
