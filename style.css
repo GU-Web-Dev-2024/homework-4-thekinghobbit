@@ -10,24 +10,31 @@ body{
     height: auto;
 }
 footer{
-    position:fixed;
+    position: relative;
     bottom:0;
     left:0;
-    height: 250px;
-    background-color: #7D5BA6;
+    height: auto;
     width: 100%;
-    text-align: center;
+    padding-top: 0px;
+    margin-top: 50px;
+    
+    /* position: relative;
+    height: 100px;
+    margin-top: -100px;
+    clear: both; */
+
+    background-color: #7D5BA6;
     background-image: url("images/footer.png");
     background-position: 100px 800px;   
+    
+    text-align: center;
     font-size: 70px;
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: black;
-    padding-top: 0px;
-  
     color: rgb(188, 12, 215);
 }
 .candyBag{
-    height: 85vh;
+    height: 80vh;
     width: 100%;
 }
 .candyHead{
