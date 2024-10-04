@@ -52,8 +52,9 @@ footer{
     border-radius: 30px;
 }
 .candy:hover {
-    animation: shrink 3s infinite linear !important;
+    animation: shrink 0.1s infinite linear !important;
     background-color: #046021;
+    /* animation-duration: 1ms; */
     
 }
 .candyContent {
@@ -86,6 +87,10 @@ footer{
         transform: scale(1);
     }
     to {
-        transform: scale(.001);
+        transform: scale(.000001);
     }
+    to{
+        transform: scale(4);
+    }
+    
 }
