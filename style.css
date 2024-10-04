@@ -7,9 +7,13 @@ body{
     font-family: "Lacquer", system-ui;
     background-image: url("images/background.png");
     background-size: cover;
+    height: auto;
 }
 footer{
-    height: 15vh;
+    position:fixed;
+    bottom:0;
+    left:0;
+    height: 250px;
     background-color: #7D5BA6;
     width: 100%;
     text-align: center;
@@ -18,8 +22,9 @@ footer{
     font-size: 70px;
     -webkit-text-stroke-width: 5px;
     -webkit-text-stroke-color: black;
+    padding-top: 0px;
   
-    color: white;
+    color: rgb(188, 12, 215);
 }
 .candyBag{
     height: 85vh;
