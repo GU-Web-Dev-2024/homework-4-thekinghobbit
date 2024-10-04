@@ -52,7 +52,7 @@ footer{
     border-radius: 30px;
 }
 .candy:hover {
-    animation: shrink 0.1s infinite linear !important;
+    -webkit-animation: shrink 0.1s infinite linear !important;
     background-color: #046021;
     /* animation-duration: 1ms; */
     
