@@ -52,9 +52,9 @@ footer{
     border-radius: 30px;
 }
 .candy:hover {
-    animation: none !important;
+    animation: shrink 3s infinite linear !important;
     background-color: #046021;
-    transform: scale(.2);
+    
 }
 .candyContent {
     text-align: center;
@@ -79,5 +79,13 @@ footer{
     }
     to { 
       transform: rotate(var(--animation-rotation));
+    }
+}
+@keyframes shrink {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.001);
     }
 }
