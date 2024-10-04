@@ -85,11 +85,15 @@
           const candies = document.querySelectorAll('.candy');
     
           candies.forEach(candy => {
-            const randomRotation = Math.random() * 360; // Random rotation between 0 and 360 degrees
-            const randomInterval = Math.random() * 3 + .001; // Random interval between 1 and 6 seconds
-    
+            const randomRotation = (Math.random() * 721) - 360; // Random rotation between 0 and 360 degrees
+            const randomInterval = Math.random() * 2 + .001; // Random interval between 1 and 6 seconds
+            if(randomRotation < 0) {
+              candy.style.setProperty('--animation-rotation', `${randomRotation - 50}deg`);
+            }else {
+              candy.style.setProperty('--animation-rotation', `${randomRotation + 50}deg`);
+            }
             candy.style.animation = `rotate ${randomInterval}s infinite linear`;
-            // candy.style.setProperty('--animation-rotation', `${randomRotation}deg`);
+            candy.style.setProperty('--animation-rotation', `${randomRotation}deg`);
           });
         });
         $(".candy").hover(candy.style.animation ='none') //Stop the animation when mouse in
