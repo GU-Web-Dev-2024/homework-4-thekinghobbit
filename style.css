@@ -53,6 +53,8 @@ footer{
 }
 .candy:hover {
     -webkit-animation: shrink 0.1s infinite linear !important;
+    -moz-animation: shrink 0.1s infinite linear !important;
+
     background-color: #046021;
     /* animation-duration: 1ms; */
     
